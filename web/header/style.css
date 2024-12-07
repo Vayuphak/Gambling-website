@@ -1,0 +1,138 @@
+body{
+    background-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000; /* Black background */
+            padding: 15px 30px;
+            color: #fff;
+        }
+
+        /* Left section (Logo) */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFD700; /* Gold color */
+        }
+
+        /* Center section (Balance info) */
+        .balance-info {
+            font-size: 16px;
+            color: #ccc;
+            display: flex;
+            align-items: center;
+        }
+        
+        .balance-info div {
+            margin: 0 15px;
+            border-right: 1px solid #fff;
+            padding-right: 15px;
+        }
+
+        .balance-info div:last-child {
+            border-right: none;
+        }
+
+        /* Right section (Buttons and account) */
+        .header-buttons {
+            display: flex;
+            align-items: center;
+        
+        }
+        .header-buttons a{
+           padding:0 20px;
+        
+        }
+        .header-buttons .a {
+            padding: 8px 15px;
+            margin-right: 15px
+        }
+        .header-buttons .button {
+            background-color: #FFD700; /* Gold color for button */
+            color: #000;
+            padding: 8px 15px;
+            margin-right: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .header-buttons .info {
+           
+            padding: 8px 15px;
+            margin-right: 15px;
+          
+        }
+        .header-buttons .account {
+            cursor: pointer;
+            color: #fff;
+          
+        }
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-content input[type="text"], .modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.login-button, .signup-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: limegreen;
+    color: #fff;
+    border: none;
+}
+
+.signup-button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+}
